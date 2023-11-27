@@ -15,7 +15,7 @@ const routes = [
   },
   {
     method: 'GET',
-    path: '/',
+    path: '/books',
     handler: getAllBooksHandler,
   },
   {
@@ -33,11 +33,11 @@ const routes = [
     path: '/books/{bookId}',
     handler: deleteBookByIdHandler,
   },
-  {
-    method: 'GET',
-    path: '/books',
-    handler: searchBook,
-  },
+//   {
+//     method: 'GET',
+//     path: '/books',
+//     handler: searchBook,
+//   },
 ];
 
 module.exports = routes;
